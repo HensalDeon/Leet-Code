@@ -24,12 +24,12 @@ var addTwoNumbers = function (l1, l2) {
         l2 = l2.next;
     }
 
-   let num1 = (Number(str1.split("").reverse().join("")) + Number(str2.split("").reverse().join(""))).toString().split("").reverse();
+   let num1 = (BigInt(str1.split("").reverse().join("")) + BigInt(str2.split("").reverse().join(""))).toString().split("").reverse();
 
-    let l3 = new ListNode(Number(num1[0]));
+    let l3 = new ListNode(BigInt(num1[0]));
     let final = l3;
     for(i=1;i<num1.length;i++){
-        final.next = new ListNode(Number(num1[i]))
+        final.next = new ListNode(BigInt(num1[i]))
         final = final.next;
     }
 
