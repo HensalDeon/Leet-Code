@@ -9,8 +9,8 @@ var lengthOfLongestSubstring = function (s) {
             end++;
         } else {
             mySet.add(s[start]);
+            max = Math.max(max, start - end + 1);
             start++;
-            max = Math.max(max, start - end);
         }
     }
     return max;
