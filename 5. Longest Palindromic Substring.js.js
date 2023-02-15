@@ -25,3 +25,6 @@ function longestPalindrome(s) {
 
     return longest;
 };
+
+const s = 'abfdadfdf'
+console.log(longestPalindrome(s));
