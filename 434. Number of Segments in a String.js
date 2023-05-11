@@ -9,5 +9,4 @@ var countSegments = function(s) {
     }
     const segments = s.trim().split(/\s+/);
     return length = segments.length;
-    
 };
