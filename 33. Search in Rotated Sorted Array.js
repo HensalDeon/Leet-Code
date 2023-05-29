@@ -16,7 +16,8 @@ var search = function (nums, target) {
         }
 
         if (target < nums[middleIndex]) {
-            rightIndex = middleIndex - 1;        } else {
+            rightIndex = middleIndex - 1;
+        } else {
             leftIndex = middleIndex + 1;
         }
     }
