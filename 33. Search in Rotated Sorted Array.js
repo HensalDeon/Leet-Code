@@ -24,4 +24,3 @@ var search = function (nums, target) {
     return -1;
 };
 
-console.log(search(nums, target));
